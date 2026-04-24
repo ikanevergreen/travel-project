@@ -1,0 +1,32 @@
+ html, *{
+        margin: 0;
+        padding: 0.1;
+}
+header{
+        background-color: aqua;
+}
+h1{
+    text-align: center; 
+    color: white;
+    font-family: Caveat; 
+    font-size: 50px;
+    padding-top: 15px;
+}
+nav, ul{
+        background-color: aqua;
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+    }
+nav, ul, li{
+            float: left;
+}
+nav, ul, li, a{
+        color: rgb(255, 0, 0);
+}
+nav, ul, li, a{
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+        }

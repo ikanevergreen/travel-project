@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan CSS - M04 Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">CSS<span>Mastery</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#" class="btn-contact">Contact</a></li>
+                <li><a href="#" class="btn-login">Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Pengenalan CSS</h1>
+            <p>Seni menata tampilan web dengan gaya yang modern dan elegan.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card content-section">
+            <div class="section-badge">Dasar</div>
+            <h1>Apa itu CSS?</h1>
+            <p class="intro-text">
+                CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mendeskripsikan presentasi
+                dokumen yang ditulis dalam bahasa markup seperti HTML. CSS digunakan untuk mengatur tata letak, warna,
+                font, dan elemen visual lainnya.
+            </p>
+
+            <div class="illustration-placeholder">
+                <img src="img/css_illustration.png" alt="CSS Illustration" class="hero-image">
+            </div>
+            <p>CSS juga dapat digunakan untuk mengatur tata letak halaman web. Dengan CSS, kita dapat mengatur
+                posisi elemen HTML pada halaman web. Selain itu, CSS juga dapat digunakan untuk mengatur ukuran elemen
+                HTML pada halaman web.</p>
+            <br>
+            <div class="illustration-placeholder">
+                <img src="img/gambar_css.jpg" alt="CSS Illustration" class="hero-image">
+            </div>
+            <p>CSS juga dapat digunakan untuk mengatur tata letak halaman web. Dengan CSS, kita dapat mengatur
+                posisi elemen HTML pada halaman web. Selain itu, CSS juga dapat digunakan untuk mengatur ukuran elemen
+                HTML pada halaman web.</p>
+            <br>
+            <article class="example-box">
+                <h2>Contoh Penerapan CSS</h2>
+                <p>
+                    Sejak jaman dulu CSS terus berkembang untuk memenuhi kebutuhan developer. Dengan CSS modern, kita
+                    bisa membuat animasi yang halus dan desain yang sangat interaktif tanpa memberatkan performa
+                    browser.
+                </p>
+            </article>
+
+            <div class="highlight-box">
+                <strong>Empower Your Design</strong>
+                <p>Kuasai CSS untuk mengubah struktur HTML menjadi karya seni digital yang fungsional.</p>
+            </div>
+
+            <div class="additional-info">
+                <p>
+                    CSS (Cascading Style Sheets) memungkinkan pemisahan antara konten (HTML) dan desain. Hal ini
+                    mempermudah pemeliharaan situs web dan memastikan tampilan tetap konsisten di berbagai perangkat.
+                </p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Responsive</h3>
+                <p>Tampilan yang menyesuaikan di berbagai ukuran layar.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Styling</h3>
+                <p>Kontrol penuh atas warna, tipografi, dan tata letak.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Animations</h3>
+                <p>Menghidupkan halaman web dengan transisi yang mulus.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 CSS Mastery Project M04. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+    </script>
+</body>
+
+</html>
