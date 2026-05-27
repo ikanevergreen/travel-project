@@ -148,7 +148,6 @@ body {
     margin: 0 auto;
     padding: 48px 24px;
     display: grid;
-    /* FIX 2: Kolom kiri (main+paket) dan kolom kanan (aside) */
     grid-template-columns: 1fr 320px;
     gap: 40px;
     align-items: start;
