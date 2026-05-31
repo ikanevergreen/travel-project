@@ -455,7 +455,7 @@ footer {
     color: #718096;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 480px) {
     .content-wrapper {
         grid-template-columns: 1fr;
     }
